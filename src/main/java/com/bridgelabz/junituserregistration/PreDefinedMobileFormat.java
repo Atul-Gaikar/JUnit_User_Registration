@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EnterAValidEmail {
+public class PreDefinedMobileFormat {
 	Scanner SC = new Scanner(System.in);
 
 	boolean FirstName() {
@@ -50,6 +50,22 @@ public class EnterAValidEmail {
 			System.out.println("Email address is Correct");
 		} else {
 			System.out.println("Email address is Inorrect");
+		}
+		return matchFound;
+	}
+
+	boolean MobileFormat() {
+		String l;
+		System.out.println("Enter Your Mobile Number :-");
+		l = SC.next();
+		Pattern pattern = Pattern.compile("^[7-9][0-9]{9}$");
+		Matcher matcher = pattern.matcher(l);
+
+		boolean matchFound = matcher.matches();
+		if (matchFound) {
+			System.out.println("Mobile Number is Correct");
+		} else {
+			System.out.println("Mobile Number is Inorrect");
 		}
 		return matchFound;
 	}
