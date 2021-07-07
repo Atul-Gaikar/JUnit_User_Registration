@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EnterAValidLastName {
+public class EnterAValidEmail {
 	Scanner SC = new Scanner(System.in);
 
 	boolean FirstName() {
@@ -22,6 +22,7 @@ public class EnterAValidLastName {
 		}
 		return matchFound;
 	}
+
 	boolean LastName() {
 		String j;
 		System.out.println("Enter Your Last Name :-");
@@ -33,6 +34,22 @@ public class EnterAValidLastName {
 			System.out.println("According To Pattern Matcher is Correct");
 		} else {
 			System.out.println("According To Pattern Matcher is Inorrect");
+		}
+		return matchFound;
+	}
+
+	boolean Email() {
+		String k;
+		System.out.println("Enter Your Email ID :-");
+		k = SC.next();
+		Pattern pattern = Pattern.compile("^[a-z0-9+_.-]+@[a-zA-Z0-9.-]+$");
+		Matcher matcher = pattern.matcher(k);
+
+		boolean matchFound = matcher.matches();
+		if (matchFound) {
+			System.out.println("Email address is Correct");
+		} else {
+			System.out.println("Email address is Inorrect");
 		}
 		return matchFound;
 	}

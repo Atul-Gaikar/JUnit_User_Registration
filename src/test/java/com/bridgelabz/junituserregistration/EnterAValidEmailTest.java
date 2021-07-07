@@ -4,18 +4,25 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class EnterAValidLastNameTest {
+public class EnterAValidEmailTest {
 
 	@Test
 	public void Firstname() {
-		EnterAValidLastName registration = new EnterAValidLastName();
+		EnterAValidEmail registration = new EnterAValidEmail();
 		boolean check = registration.FirstName();
 		assertTrue(check);
 	}
 	@Test
 	public void LastName() {
-		EnterAValidLastName registration = new EnterAValidLastName();
+		EnterAValidEmail registration = new EnterAValidEmail();
 		boolean check = registration.LastName();
 		assertTrue(check);
 	}
+	@Test
+	public void Email() {
+		EnterAValidEmail registration = new EnterAValidEmail();
+		boolean check = registration.Email();
+		assertTrue(check);
+	}
 }
+
