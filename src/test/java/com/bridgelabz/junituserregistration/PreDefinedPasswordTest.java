@@ -4,31 +4,40 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class PreDefinedMobileFormatTest {
+public class PreDefinedPasswordTest {
 
 	@Test
 	public void Firstname() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		PreDefinedPassword registration = new PreDefinedPassword();
 		boolean check = registration.FirstName();
 		assertTrue(check);
 	}
+
 	@Test
 	public void LastName() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		PreDefinedPassword registration = new PreDefinedPassword();
 		boolean check = registration.LastName();
 		assertTrue(check);
 	}
+
 	@Test
 	public void Email() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		PreDefinedPassword registration = new PreDefinedPassword();
 		boolean check = registration.Email();
 		assertTrue(check);
 	}
+
 	@Test
 	public void MobileFormat() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		PreDefinedPassword registration = new PreDefinedPassword();
 		boolean check = registration.MobileFormat();
 		assertTrue(check);
 	}
-}
 
+	@Test
+	public void PasswordFormat() {
+		PreDefinedPassword registration = new PreDefinedPassword();
+		boolean check = registration.Password();
+		assertTrue(check);
+	}
+}

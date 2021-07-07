@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PreDefinedMobileFormat {
+public class PreDefinedPassword {
 	Scanner SC = new Scanner(System.in);
 
 	boolean FirstName() {
@@ -67,6 +67,24 @@ public class PreDefinedMobileFormat {
 		} else {
 			System.out.println("Mobile Number is Inorrect");
 		}
+		return matchFound;
+	}
+
+	boolean Password() {
+		String m;
+		System.out.println("Enter Your Password :-");
+		m = SC.next();
+		Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_.@-]{8}+$");
+		Matcher matcher = pattern.matcher(m);
+
+		boolean matchFound = matcher.matches();
+		if (matchFound) {
+			System.out.println("The password is Correct");
+		} else {
+			System.out.println("The password is Inorrect");
+		}
+		System.out.println();
+
 		return matchFound;
 	}
 }
