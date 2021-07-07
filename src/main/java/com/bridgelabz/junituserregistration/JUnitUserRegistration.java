@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EnterAValidLastName {
+public class JUnitUserRegistration {
 	Scanner SC = new Scanner(System.in);
 
 	boolean FirstName() {
