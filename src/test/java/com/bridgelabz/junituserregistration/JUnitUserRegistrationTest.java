@@ -4,29 +4,29 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class PreDefinedMobileFormatTest {
+public class JUnitUserRegistrationTest {
 
 	@Test
 	public void Firstname() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.FirstName();
 		assertTrue(check);
 	}
 	@Test
 	public void LastName() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.LastName();
 		assertTrue(check);
 	}
 	@Test
 	public void Email() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.Email();
 		assertTrue(check);
 	}
 	@Test
 	public void MobileFormat() {
-		PreDefinedMobileFormat registration = new PreDefinedMobileFormat();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.MobileFormat();
 		assertTrue(check);
 	}
