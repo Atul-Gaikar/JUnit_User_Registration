@@ -4,23 +4,23 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class EnterAValidEmailTest {
+public class JUnitUserRegistrationTest {
 
 	@Test
 	public void Firstname() {
-		EnterAValidEmail registration = new EnterAValidEmail();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.FirstName();
 		assertTrue(check);
 	}
 	@Test
 	public void LastName() {
-		EnterAValidEmail registration = new EnterAValidEmail();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.LastName();
 		assertTrue(check);
 	}
 	@Test
 	public void Email() {
-		EnterAValidEmail registration = new EnterAValidEmail();
+		JUnitUserRegistration registration = new JUnitUserRegistration();
 		boolean check = registration.Email();
 		assertTrue(check);
 	}
